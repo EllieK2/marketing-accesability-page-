@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" /> <!--allowing to have a special character (heart on the bottom of the page)-->
     <link rel="stylesheet" href="./assets/style.css" /> <!--document linked with css-->
-    <title>Marketing-Accessability-Page-</title> <!--page navigation-->
+    <title>Horiseon marketing web page</title> <!--page navigation-->
   </head>
 
   <body> <!--larger part of the content-->
     <header class="header">
       <h1>Hori<span class="seo">seo</span>n</h1> <!--title of the page-->
-    </nav class=nav> <!--removed header and replaced with nav tag-->
+    <nav class=nav> <!--removed header and replaced with open nav tag-->
         <ul> <!--unordered list elements-->
           <li> <!--list elements-->
+            <!--link does not work and does not lead to the specific location-->
             <a href="#search-engine-optimization">Search Engine Optimization</a>
           </li>
           <li>
             <!--link works and leads to the specific location-->
-            <a href="#online-reputation-management"
-              >Online Reputation Management</a>
+            <a href="#online-reputation-management">Online Reputation Management</a>
           </li>
           <li>
             <!--link works and leads to the specific location-->
@@ -26,11 +26,11 @@
         </ul>
       </nav>
     </header>
-<p></p> <!--paragraph followed by h1, h1, h3 section-->
-<h2> <section class="hero"></section> </h2>
+<!--section class followed by h2, h3, h4 section-->
+<section class="hero"></section>
   <!--changed div to section-->
-    <h3 class="content">
-      <article class="search-engine-optimization">
+    <section class="content">
+      <section class="search-engine-optimization">
         <img src="./assets/images/search-engine-optimization.jpg" 
           class="float-left" alt=""/>
         <h3>Search Engine Optimization</h3>
@@ -40,11 +40,10 @@
           home. Search Engine Optimization (SEO) allows you to increase your
           visibility and find the right customers for your business.
         </p>
-      </article>
-      <section
-        id="online-reputation-management" class="online-reputation-management">
+      </section>
+      <section id="online-reputation-management" class="online-reputation-management">
         <img src="./assets/images/online-reputation-management.jpg"
-          class="float-right"/>
+          class="float-right" alt="image of the desk with a notebook, laptop, pencils and a coffee"/>
         <h3>Online Reputation Management</h3>
         <p>
           The web is full of opinions, and some of these can be negative. Social
@@ -55,7 +54,7 @@
         </p>
       </section>
       <section id="social-media-marketing" class="social-media-marketing">
-        <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
+        <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="image of the desk and people around brainstorming tech ideas"/>
 
         <h3>Social Media Marketing</h3>
         <p>
@@ -65,9 +64,10 @@
           your lead generation.
         </p>
       </section>
-    </h3>
-  </section> <!--sidebar added to expose the benefits of working with this marketing firm -->
-    <sidebar class="benefits">
+
+  <main>
+    </section> <!--aside tag added to expose the benefits of working with this marketing firm -->
+    <aside class="benefits">
       <article class="benefit-lead">
         <h4>Lead Generation</h4>
         <img src="./assets/images/lead-generation.png" alt="icon suggesting lead generation"/> <!--atl attribute added for accessability-->
@@ -92,7 +92,10 @@
           costs decrease, and you no longer need to advertise your page.
         </p>
       </article>
-
+    </section> 
+  </main>
+  
+  <footer>
     <footer class="footer"> <!--modified a footer-->
       <h5>Made with ❤️️ by Horiseon</h5>
       <p>
